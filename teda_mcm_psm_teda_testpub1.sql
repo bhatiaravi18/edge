@@ -1,0 +1,10 @@
+begin;
+grant usage on schema tenopr,terep,terep_dirty,testg to "mcm_psm_teda_testpub1";
+grant select on all tables in schema tenopr,terep,terep_dirty,testg to "mcm_psm_teda_testpub1";
+alter default privileges in schema tenopr,terep,terep_dirty,testg grant select on tables to "mcm_psm_teda_testpub1";
+GRANT ALL privileges ON ALL TABLES IN SCHEMA terep_cstm TO "mcm_psm_teda_testpub1";
+GRANT CREATE ON SCHEMA terep_cstm TO "mcm_psm_teda_testpub1";
+GRANT USAGE ON SCHEMA terep_cstm TO "mcm_psm_teda_testpub1";
+GRANT SELECT ON ALL TABLES IN SCHEMA terep_cstm TO "mcm_psm_teda_testpub1";
+ALTER DEFAULT PRIVILEGES IN SCHEMA terep_cstm grant all on tables to "mcm_psm_teda_testpub1";
+commit;

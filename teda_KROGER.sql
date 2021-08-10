@@ -1,0 +1,10 @@
+begin;
+grant usage on schema tenopr,terep,terep_dirty,testg to "nestle_pgsql_ob";
+grant select on all tables in schema tenopr,terep,terep_dirty,testg to "nestle_pgsql_ob";
+alter default privileges in schema tenopr,terep,terep_dirty,testg grant select on tables to "nestle_pgsql_ob";
+GRANT ALL privileges ON ALL TABLES IN SCHEMA terep_cstm TO "nestle_pgsql_ob";
+GRANT CREATE ON SCHEMA terep_cstm TO "nestle_pgsql_ob";
+GRANT USAGE ON SCHEMA terep_cstm TO "nestle_pgsql_ob";
+GRANT SELECT ON ALL TABLES IN SCHEMA terep_cstm TO "nestle_pgsql_ob";
+ALTER DEFAULT PRIVILEGES IN SCHEMA terep_cstm grant all on tables to "nestle_pgsql_ob";
+commit;
